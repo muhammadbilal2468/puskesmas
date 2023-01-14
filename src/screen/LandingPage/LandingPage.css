@@ -1,0 +1,120 @@
+.lp {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ---------------- HEADER ---------------- */
+.lp-header {
+  padding: 0px 77px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 6px 20px #000000;
+  background-color: white;
+  height: 10vh;
+  box-sizing: border-box;
+}
+.lp-header .logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lp-header .logo img {
+  width: 40px;
+  height: 42px;
+}
+.lp-header .logo h3 {
+  color: #006634;
+}
+.lp-header .menu {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.lp-header .menu .btn-menu {
+  display: flex;
+  margin-right: 20px;
+}
+.lp-header .menu .btn-menu a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #006634;
+  margin-right: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+.lp-header .menu .btn-menu a:hover {
+  background-color: #12c970;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+}
+.lp-header .menu .btn-login button {
+  font-size: 15px;
+  background-color: #006634;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* ---------------- BANNER ---------------- */
+.lp-banner {
+  padding: 0px 77px;
+  display: grid;
+  grid-template-areas: "banner-left banner-right";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 90vh;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+.lp-banner .left {
+  grid-area: banner-left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+.lp-banner .left h2 {
+  font-size: 40px;
+  color: #006634;
+  font-weight: 700;
+  margin-bottom: -20px;
+}
+.lp-banner .left p {
+  font-weight: 400;
+  font-size: 28px;
+  color: #006634;
+}
+.lp-banner .left button {
+  font-size: 15px;
+  background-color: #006634;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 13px 35px;
+  cursor: pointer;
+}
+.lp-banner .right {
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  grid-area: banner-right;
+  justify-content: center;
+  align-items: center;
+}
+.lp-banner .right img {
+  width: 400px;
+  height: 300px;
+}
