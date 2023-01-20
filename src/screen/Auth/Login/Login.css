@@ -1,0 +1,133 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(250, 244, 244);
+}
+.login .login-box {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+  width: 90%;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 7px 2px rgba(0, 0, 0, 0.303);
+}
+
+/* ----------------------- LEFT -------------------- */
+.login .login-box .left {
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
+  padding: 20px 50px;
+}
+.login .login-box .left .title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #019934;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.login .login-box .left .desc {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.login .login-box .left form {
+  display: flex;
+  flex-direction: column;
+}
+.login .login-box .left form label {
+  font-weight: 600;
+  font-size: 20px;
+  color: #019934;
+  margin-bottom: 5px;
+}
+.login .login-box .left form .input-box {
+  margin-bottom: 30px;
+}
+.login .login-box .left form .input-box,
+.login .login-box .left form .input-box-pass {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.login .login-box .left form .input-box input,
+.login .login-box .left form .input-box-pass input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  padding: 0px 60px;
+  font-size: 20px;
+  border: none;
+}
+.login .login-box .left form .input-box .fa-envelope,
+.login .login-box .left form .input-box-pass .fa-lock {
+  position: absolute;
+  line-height: 45px;
+  font-size: 25px;
+  z-index: 1;
+  left: 20px;
+  color: gray;
+}
+.login .login-box .left form .input-box-pass .fa-eye {
+  position: absolute;
+  line-height: 45px;
+  font-size: 25px;
+  z-index: 1;
+  right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.login .login-box .left form .forget-pass {
+  text-align: end;
+  font-weight: 700;
+  font-size: 18px;
+  color: #019934;
+  cursor: pointer;
+}
+.login .login-box .left form button {
+  background: #019934;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+.login .login-box .left form p.dont-have-acc {
+  font-weight: 600;
+  font-size: 18px;
+  color: #636363;
+  text-align: center;
+}
+.login .login-box .left form p.dont-have-acc span {
+  color: #019934;
+  cursor: pointer;
+}
+
+/* ----------------------- RIGHT -------------------- */
+.login .login-box .right {
+  grid-area: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #019934;
+  border-radius: 0px 15px 15px 0px;
+}
+.login .login-box .right img {
+  width: 400px;
+  height: 450px;
+}
